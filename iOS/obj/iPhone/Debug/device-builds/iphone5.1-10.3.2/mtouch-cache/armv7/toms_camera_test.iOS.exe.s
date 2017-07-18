@@ -339,7 +339,7 @@ runtime_version:
 .section __TEXT, __const
 	.align 2
 assembly_guid:
-	.asciz "11892223-BC4E-47CA-B40F-9892B16E800C"
+	.asciz "613C2ECF-222C-414F-A6FD-36274B497F2C"
 .section __TEXT, __const
 	.align 2
 assembly_name:
@@ -422,7 +422,7 @@ _mono_aot_file_info:
 	.long 32,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0
-	.byte 179,255,168,10,56,30,83,122,216,194,221,217,145,221,80,52
+	.byte 196,100,124,194,116,191,193,88,201,191,186,194,191,14,84,131
 	.globl _mono_aot_module_toms_camera_test_iOS_info
 	.align 2
 _mono_aot_module_toms_camera_test_iOS_info:

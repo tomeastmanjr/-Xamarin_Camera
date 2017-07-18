@@ -6,6 +6,7 @@
                     Padding="15,20,15,5">
         <Label Text="Welcome to Tom's Camera Test!" VerticalOptions="Center" HorizontalOptions="Center" />
         <Button Text="Take Photo" Clicked="TakePhoto" BackgroundColor="Silver" />
+        <Button Text="Pick Photo" Clicked="PickPhoto" BackgroundColor="Silver" />
         <Image x:Name="image" Source="{Binding}" />
     </StackLayout>
 </ContentPage>
