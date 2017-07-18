@@ -1,0 +1,10 @@
+/Users/tomeastman/Desktop/AI/Mobile/Xamarin/toms_camera_test/UITests/bin/Debug/toms_camera_test.UITests.dll
+/Users/tomeastman/Desktop/AI/Mobile/Xamarin/toms_camera_test/UITests/bin/Debug/toms_camera_test.UITests.pdb
+/Users/tomeastman/Desktop/AI/Mobile/Xamarin/toms_camera_test/UITests/bin/Debug/nunit.framework.dll
+/Users/tomeastman/Desktop/AI/Mobile/Xamarin/toms_camera_test/UITests/bin/Debug/Xamarin.UITest.dll
+/Users/tomeastman/Desktop/AI/Mobile/Xamarin/toms_camera_test/UITests/bin/Debug/nunit.framework.xml
+/Users/tomeastman/Desktop/AI/Mobile/Xamarin/toms_camera_test/UITests/bin/Debug/Xamarin.UITest.xml
+/Users/tomeastman/Desktop/AI/Mobile/Xamarin/toms_camera_test/UITests/obj/Debug/toms_camera_test.UITests.csprojResolveAssemblyReference.cache
+/Users/tomeastman/Desktop/AI/Mobile/Xamarin/toms_camera_test/UITests/obj/Debug/toms_camera_test.UITests.csproj.CoreCompileInputs.cache
+/Users/tomeastman/Desktop/AI/Mobile/Xamarin/toms_camera_test/UITests/obj/Debug/toms_camera_test.UITests.dll
+/Users/tomeastman/Desktop/AI/Mobile/Xamarin/toms_camera_test/UITests/obj/Debug/toms_camera_test.UITests.pdb
