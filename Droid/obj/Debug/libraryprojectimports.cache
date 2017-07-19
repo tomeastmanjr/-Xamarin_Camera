@@ -13,7 +13,6 @@
     <ResolvedResourceDirectory>/Users/tomeastman/Desktop/AI/Mobile/Xamarin/toms_camera_test/Droid/obj/Debug/__library_projects__/Xamarin.Android.Support.v7.RecyclerView/library_project_imports/res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>/Users/tomeastman/Desktop/AI/Mobile/Xamarin/toms_camera_test/Droid/obj/Debug/__library_projects__/Xamarin.Forms.Platform.Android/library_project_imports/res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>/Users/tomeastman/Desktop/AI/Mobile/Xamarin/toms_camera_test/Droid/obj/Debug/__library_projects__/Xamarin.Forms.Platform/library_project_imports/res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>/Users/tomeastman/Desktop/AI/Mobile/Xamarin/toms_camera_test/Droid/obj/Debug/__library_projects__/Plugin.Media/library_project_imports/res</ResolvedResourceDirectory>
   </ResolvedResourceDirectories>
   <ResolvedAssetDirectories>
     <ResolvedAssetDirectory>obj/Debug/__library_projects__/Plugin.CurrentActivity/library_project_imports/assets</ResolvedAssetDirectory>
@@ -21,7 +20,6 @@
     <ResolvedAssetDirectory>obj/Debug/__library_projects__/Plugin.Permissions/library_project_imports/assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>obj/Debug/__library_projects__/Xamarin.Forms.Platform.Android/library_project_imports/assets</ResolvedAssetDirectory>
     <ResolvedAssetDirectory>obj/Debug/__library_projects__/Xamarin.Forms.Platform/library_project_imports/assets</ResolvedAssetDirectory>
-    <ResolvedAssetDirectory>obj/Debug/__library_projects__/Plugin.Media/library_project_imports/assets</ResolvedAssetDirectory>
   </ResolvedAssetDirectories>
   <ResolvedEnvironmentFiles />
   <ResolvedResourceDirectoryStamps>
@@ -36,6 +34,5 @@
     <ResolvedResourceDirectoryStamp>/Users/tomeastman/Desktop/AI/Mobile/Xamarin/toms_camera_test/Droid/obj/Debug/__library_projects__/Xamarin.Android.Support.v7.RecyclerView.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>/Users/tomeastman/Desktop/AI/Mobile/Xamarin/toms_camera_test/Droid/obj/Debug/__library_projects__/Xamarin.Forms.Platform.Android.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>/Users/tomeastman/Desktop/AI/Mobile/Xamarin/toms_camera_test/Droid/obj/Debug/__library_projects__/Xamarin.Forms.Platform.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>/Users/tomeastman/Desktop/AI/Mobile/Xamarin/toms_camera_test/Droid/obj/Debug/__library_projects__/Plugin.Media.stamp</ResolvedResourceDirectoryStamp>
   </ResolvedResourceDirectoryStamps>
 </Paths>

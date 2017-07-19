@@ -59,11 +59,11 @@
 /Users/tomeastman/Desktop/AI/Mobile/Xamarin/toms_camera_test/iOS/bin/iPhone/Debug/zh-HK/Xamarin.Forms.Platform.iOS.resources.dll
 /Users/tomeastman/Desktop/AI/Mobile/Xamarin/toms_camera_test/iOS/bin/iPhone/Debug/zh-Hans/Xamarin.Forms.Platform.iOS.resources.dll
 /Users/tomeastman/Desktop/AI/Mobile/Xamarin/toms_camera_test/iOS/bin/iPhone/Debug/zh-Hant/Xamarin.Forms.Platform.iOS.resources.dll
-/Users/tomeastman/Desktop/AI/Mobile/Xamarin/toms_camera_test/iOS/obj/iPhone/Debug/device-builds/iphone5.1-10.3.2/ibtool/_BundleResourceWithLogicalName.items
-/Users/tomeastman/Desktop/AI/Mobile/Xamarin/toms_camera_test/iOS/obj/iPhone/Debug/device-builds/iphone5.1-10.3.2/actool/_PartialAppManifest.items
-/Users/tomeastman/Desktop/AI/Mobile/Xamarin/toms_camera_test/iOS/obj/iPhone/Debug/device-builds/iphone5.1-10.3.2/actool/_BundleResourceWithLogicalName.items
-/Users/tomeastman/Desktop/AI/Mobile/Xamarin/toms_camera_test/iOS/obj/iPhone/Debug/device-builds/iphone5.1-10.3.2/optimized/
 /Users/tomeastman/Desktop/AI/Mobile/Xamarin/toms_camera_test/iOS/obj/iPhone/Debug/toms_camera_test.iOS.csprojResolveAssemblyReference.cache
 /Users/tomeastman/Desktop/AI/Mobile/Xamarin/toms_camera_test/iOS/obj/iPhone/Debug/toms_camera_test.iOS.csproj.CoreCompileInputs.cache
 /Users/tomeastman/Desktop/AI/Mobile/Xamarin/toms_camera_test/iOS/obj/iPhone/Debug/toms_camera_test.iOS.exe
 /Users/tomeastman/Desktop/AI/Mobile/Xamarin/toms_camera_test/iOS/obj/iPhone/Debug/toms_camera_test.iOS.pdb
+/Users/tomeastman/Desktop/AI/Mobile/Xamarin/toms_camera_test/iOS/obj/iPhone/Debug/device-builds/iphone9.3-10.3.2/ibtool/_BundleResourceWithLogicalName.items
+/Users/tomeastman/Desktop/AI/Mobile/Xamarin/toms_camera_test/iOS/obj/iPhone/Debug/device-builds/iphone9.3-10.3.2/actool/_PartialAppManifest.items
+/Users/tomeastman/Desktop/AI/Mobile/Xamarin/toms_camera_test/iOS/obj/iPhone/Debug/device-builds/iphone9.3-10.3.2/actool/_BundleResourceWithLogicalName.items
+/Users/tomeastman/Desktop/AI/Mobile/Xamarin/toms_camera_test/iOS/obj/iPhone/Debug/device-builds/iphone9.3-10.3.2/optimized/

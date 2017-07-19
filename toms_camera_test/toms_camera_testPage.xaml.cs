@@ -22,20 +22,6 @@ namespace toms_camera_test
         /// <param name="args">None being passed currently</param>
 		public async void TakePhoto(object sender, EventArgs args)
 		{
-			// This is required. Initialize the plugin to gain access to API's
-			//await CrossMedia.Current.Initialize();
-
-            // Check to see if permission has been granted by the user to use the camera and storage
-			//var cameraStatus = await CrossPermissions.Current.CheckPermissionStatusAsync(Permission.Camera);
-			//var storageStatus = await CrossPermissions.Current.CheckPermissionStatusAsync(Permission.Storage);
-
-            // If the user hasn't granted permission to use the camera or storage, request again
-			//if (cameraStatus != PermissionStatus.Granted || storageStatus != PermissionStatus.Granted)
-			//{
-			//	var results = await CrossPermissions.Current.RequestPermissionsAsync(new[] { Permission.Camera, Permission.Storage });
-			//	cameraStatus = results[Permission.Camera];
-			//	storageStatus = results[Permission.Storage];
-			//}
 		    
             // Check to see if the camera is avialble and taking a photo is supported
 		    if (!CrossMedia.Current.IsCameraAvailable || !CrossMedia.Current.IsTakePhotoSupported)
@@ -45,100 +31,88 @@ namespace toms_camera_test
 		        return;
 		    }
 
-            // If permission is granted for the camera AND the storage, take a photo.
+            // Take a photo.
             // Currently, save the file in a sample directory with the name test.jpg
-			//if (cameraStatus == PermissionStatus.Granted && storageStatus == PermissionStatus.Granted)
-			//{
-				var file = await CrossMedia.Current.TakePhotoAsync(new StoreCameraMediaOptions
-				{
-					
+			var file = await CrossMedia.Current.TakePhotoAsync(new StoreCameraMediaOptions
+			{
+				
+                // RESET PHOTO SIZE
+				// By default the photo that is taken/picked is the maxiumum size and quality available. 
+                // For most applications this is not needed and can be Resized. 
+                // This can be accomplished by adjusting the PhotoSize property on the options. 
+                // The easiest is to adjust it to Small, Medium, or Large, which is 25%, 50%, or 75% or the original.
 
-                    // RESET PHOTO SIZE
-					// By default the photo that is taken/picked is the maxiumum size and quality available. 
-                    // For most applications this is not needed and can be Resized. 
-                    // This can be accomplished by adjusting the PhotoSize property on the options. 
-                    // The easiest is to adjust it to Small, Medium, or Large, which is 25%, 50%, or 75% or the original.
+				// Photo Size options examples
 
-					// Photo Size options examples
+				PhotoSize = PhotoSize.Medium,
 
-					//PhotoSize = PhotoSize.Medium,
+				//PhotoSize = PhotoSize.Custom,
+                //CustomPhotoSize = 90, // Resize to 90% of original
 
-					//PhotoSize = PhotoSize.Custom,
-                    CustomPhotoSize = 90, // Resize to 90% of original
+                // PHOTO QUALITY
+				// Set the CompressionQuality, which is a value from 0 the most compressed all the way to 100, which is no compression.
+                // A good setting from testing is around 92
+                CompressionQuality = 92,
 
-                    // PHOTO QUALITY
-					// Set the CompressionQuality, which is a value from 0 the most compressed all the way to 100, which is no compression.
-                    // A good setting from testing is around 92
-                    CompressionQuality = 92,
+                // SAVING PHOTO TO CAMERA ROLL
+				// You can now save a photo or video to the camera roll/gallery.
+				// When creating the StoreCameraMediaOptions or StoreVideoMediaOptions simply set SaveToAlbum to true.
+				// When your user takes a photo it will still store temporary data, but also if needed make a copy to the public gallery (based on platform).
+				// In the MediaFile you will now see a AlbumPath that you can query as well.
+				// This will restult in 2 photos being saved for the photo.
+                // One in your private folder and one in a public directory that is shown. The value will be returned at AlbumPath.
+                // Android: When you set SaveToAlbum this will make it so your photos are public in the Pictures/YourDirectory or Movies/YourDirectory.
+                // This is the only way Android can detect the photos.
+                SaveToAlbum = true,
 
-                    // SAVING PHOTO TO CAMERA ROLL
-					// You can now save a photo or video to the camera roll/gallery.
-					// When creating the StoreCameraMediaOptions or StoreVideoMediaOptions simply set SaveToAlbum to true.
-					// When your user takes a photo it will still store temporary data, but also if needed make a copy to the public gallery (based on platform).
-					// In the MediaFile you will now see a AlbumPath that you can query as well.
-					// This will restult in 2 photos being saved for the photo.
-                    // One in your private folder and one in a public directory that is shown. The value will be returned at AlbumPath.
-                    // Android: When you set SaveToAlbum this will make it so your photos are public in the Pictures/YourDirectory or Movies/YourDirectory.
-                    // This is the only way Android can detect the photos.
-                    SaveToAlbum = true,
+				// ALLOW CROPPING
+                // iOS has crop controls built into the the camera control when taking a photo.
+                // On iOS the default is false.
+                // You can adjust the AllowCropping property when taking a photo to allow your user to crop.
+                //AllowCropping = true,
 
-					// ALLOW CROPPING
-                    // iOS has crop controls built into the the camera control when taking a photo.
-                    // On iOS the default is false.
-                    // You can adjust the AllowCropping property when taking a photo to allow your user to crop.
-                    AllowCropping = true,
+                // DEFAULT CAMERA
+                // By default when you take a photo or video the default system camera will be selected.
+                // Simply set the DefaultCamera on StoreCameraMediaOptions.
+                // This option does not guarantee that the actual camera will be selected because each platform is different.
+                // It seems to work extremely well on iOS,
+                // but not so much on Android.Your mileage may vary.
+                //DefaultCamera = CameraDevice.Front,
 
-                    // DEFAULT CAMERA
-                    // By default when you take a photo or video the default system camera will be selected.
-                    // Simply set the DefaultCamera on StoreCameraMediaOptions.
-                    // This option does not guarantee that the actual camera will be selected because each platform is different.
-                    // It seems to work extremely well on iOS,
-                    // but not so much on Android.Your mileage may vary.
-                    DefaultCamera = CameraDevice.Front,
+                // Where should we save our private copy of the photo
+				Directory = "toms_camera_test_photos",
 
-                    // Where should we save our private copy of the photo
-					Directory = "Sample",
+                // What should we name the photo
+                // Might be a good idea to add a time stamp on here
+				Name = "testPhoto" + DateTime.Now.ToString("yyyyMMddHHmmss") + ".jpg",
 
-                    // What should we name the photo
-                    // Might be a good idea to add a time stamp on here
-					Name = "test.jpg",
+			});
 
+			if (file == null)
+				return;
 
+			//Get the public album path
+			var aPpath = file.AlbumPath;
+			Debug.WriteLine("This is the file.AlbumPath " + aPpath);
 
-				});
+			//Get private path
+			var path = file.Path;
+            Debug.WriteLine("This is the file.Path " + path);
 
-				if (file == null)
-					return;
+            // Display an alert showing where the file was saved
+			await DisplayAlert("File Location private path", path, "OK");
 
-				//Get the public album path
-				var aPpath = file.AlbumPath;
-				Debug.WriteLine("This is the file.AlbumPath " + aPpath);
+            // Update the Source for the image tag on the Xaml page with where we just saved the file
+			image.Source = ImageSource.FromStream(() =>
+			{
+				var stream = file.GetStream();
+				file.Dispose();
+				return stream;
+			});
 
-				//Get private path
-				var path = file.Path;
-                Debug.WriteLine("This is the file.Path " + path);
-
-                // Display an alert showing where the file was saved
-				await DisplayAlert("File Location private path", path, "OK");
-
-                // Update the Source for the image tag on the Xaml page with where we just saved the file
-				image.Source = ImageSource.FromStream(() =>
-				{
-					var stream = file.GetStream();
-					file.Dispose();
-					return stream;
-				});
-
-				//or:
-				//image.Source = ImageSource.FromFile(file.Path);
-				//image.Dispose();
-			//}
-			//else
-			//{
-			//	await DisplayAlert("Permissions Denied", "Unable to take photos.", "OK");
-			//	//On iOS you may want to send your user to the settings screen.
-			//	//CrossPermissions.Current.OpenAppSettings();
-			//}
+			//or:
+			//image.Source = ImageSource.FromFile(file.Path);
+			//image.Dispose();
 		}
 
         /// <summary>
@@ -148,48 +122,25 @@ namespace toms_camera_test
         /// <param name="args">None currently being passed</param>
         public async void PickPhoto(object sender, EventArgs args)
         {
-			// This is required. Initialize the plugin to gain access to API's
-			//await CrossMedia.Current.Initialize();
+			var file = await CrossMedia.Current.PickPhotoAsync();
 
-			// Check to see if permission has been granted by the user to use the storage
-			//var storageStatus = await CrossPermissions.Current.CheckPermissionStatusAsync(Permission.Storage);
+			if (file == null)
+				return;
 
-			// If the user hasn't granted permission to use the camera or storage, request again
-			//if (storageStatus != PermissionStatus.Granted)
-			//{
-			//	var results = await CrossPermissions.Current.RequestPermissionsAsync(new[] { Permission.Storage });
-			//	storageStatus = results[Permission.Storage];
-			//}
+			// Display an alert showing where the file was saved
+			await DisplayAlert("File Location", file.Path, "OK");
 
-			// If permission is granted for the storage, open the gallery to choose a photo.
-			//if (storageStatus == PermissionStatus.Granted)
-			//{
-				var file = await CrossMedia.Current.PickPhotoAsync();
+			// Update the Source for the image tag on the Xaml page with where we just saved the file
+			image.Source = ImageSource.FromStream(() =>
+			{
+				var stream = file.GetStream();
+				file.Dispose();
+				return stream;
+			});
 
-				if (file == null)
-					return;
-
-				// Display an alert showing where the file was saved
-				await DisplayAlert("File Location", file.Path, "OK");
-
-				// Update the Source for the image tag on the Xaml page with where we just saved the file
-				image.Source = ImageSource.FromStream(() =>
-				{
-					var stream = file.GetStream();
-					file.Dispose();
-					return stream;
-				});
-
-				//or:
-				//image.Source = ImageSource.FromFile(file.Path);
-				//image.Dispose();
-			//}
-			//else
-			//{
-			//	await DisplayAlert("Permissions Denied", "Unable to access photos.", "OK");
-			//	//On iOS you may want to send your user to the settings screen.
-			//	//CrossPermissions.Current.OpenAppSettings();
-			//}
+			//or:
+			//image.Source = ImageSource.FromFile(file.Path);
+			//image.Dispose();
 
         }
     }

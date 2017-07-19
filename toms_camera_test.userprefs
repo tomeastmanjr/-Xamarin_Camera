@@ -1,16 +1,16 @@
-﻿<Properties StartupConfiguration="{8C8F2F88-2AEF-4537-893D-C575A7482A21}|Default">
+﻿<Properties StartupConfiguration="{C2672852-D145-4E7C-8C2E-E0EB28862D2C}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="toms_camera_test/toms_camera_testPage.xaml.cs">
     <Files>
       <File FileName="toms_camera_test/toms_camera_testPage.xaml" Line="15" Column="1" />
-      <File FileName="toms_camera_test/toms_camera_testPage.xaml.cs" Line="26" Column="42" />
+      <File FileName="toms_camera_test/toms_camera_testPage.xaml.cs" Line="47" Column="34" />
     </Files>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.toms__camera__test.Droid PreferredExecutionTarget="Android.Android_Accelerated_x86" />
-  <MonoDevelop.Ide.ItemProperties.toms__camera__test.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.6CEEF7DC-B85F-4001-8104-2193DE938B9A" />
+  <MonoDevelop.Ide.ItemProperties.toms__camera__test.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.03774a5808f04fc87f8f4ff4e5beeeb31db796dd" />
 </Properties>
