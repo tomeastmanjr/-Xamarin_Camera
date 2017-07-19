@@ -11,17 +11,12 @@
 #import <UIKit/UIKit.h>
 #import <QuartzCore/QuartzCore.h>
 #import <QuartzCore/CAEmitterBehavior.h>
-#import <CoreLocation/CoreLocation.h>
-#import <CoreMotion/CoreMotion.h>
 #import <CoreSpotlight/CoreSpotlight.h>
 #import <CoreImage/CoreImage.h>
-#import <Photos/Photos.h>
 #import <CloudKit/CloudKit.h>
-#import <Speech/Speech.h>
+#import <Photos/Photos.h>
 #import <GLKit/GLKit.h>
-#import <EventKit/EventKit.h>
 #import <AssetsLibrary/AssetsLibrary.h>
-#import <AVFoundation/AVFoundation.h>
 #import <CoreGraphics/CoreGraphics.h>
 
 @protocol CALayerDelegate;
@@ -38,7 +33,6 @@
 @class UIKit_UIScrollView__UIScrollViewDelegate;
 @class UIKit_UITextView__UITextViewDelegate;
 @class UIKit_UIView_UIViewAppearance;
-@class CoreLocation_CLLocationManager__CLLocationManagerDelegate;
 @class GLKit_GLKView__GLKViewDelegate;
 @class UIKit_UIGestureRecognizer__UIGestureRecognizerDelegate;
 @class __UIGestureRecognizerToken;

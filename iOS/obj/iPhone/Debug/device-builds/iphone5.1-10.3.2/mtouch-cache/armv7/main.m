@@ -17,9 +17,7 @@ extern void *mono_aot_module_Calabash_info;
 extern void *mono_aot_module_toms_camera_test_info;
 extern void *mono_aot_module_Xamarin_Forms_Xaml_info;
 extern void *mono_aot_module_Plugin_Media_Abstractions_info;
-extern void *mono_aot_module_Plugin_Permissions_Abstractions_info;
 extern void *mono_aot_module_Plugin_Media_info;
-extern void *mono_aot_module_Plugin_Permissions_info;
 
 void xamarin_register_modules_impl ()
 {
@@ -40,9 +38,7 @@ void xamarin_register_modules_impl ()
 	mono_aot_register_module (mono_aot_module_toms_camera_test_info);
 	mono_aot_register_module (mono_aot_module_Xamarin_Forms_Xaml_info);
 	mono_aot_register_module (mono_aot_module_Plugin_Media_Abstractions_info);
-	mono_aot_register_module (mono_aot_module_Plugin_Permissions_Abstractions_info);
 	mono_aot_register_module (mono_aot_module_Plugin_Media_info);
-	mono_aot_register_module (mono_aot_module_Plugin_Permissions_info);
 
 }
 

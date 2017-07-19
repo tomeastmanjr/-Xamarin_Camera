@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:toms_camera_test" 
     x:Class="toms_camera_test.toms_camera_testPage">
-    <StackLayout VerticalOptions="Center" 
-                    Spacing="20"
-                    Padding="15,20,15,5">
-        <Label Text="Welcome to Tom's Camera Test!" VerticalOptions="Center" HorizontalOptions="Center" />
-        <Button Text="Take Photo" Clicked="TakePhoto" BackgroundColor="Silver" />
-        <Button Text="Pick Photo" Clicked="PickPhoto" BackgroundColor="Silver" />
-        <Image x:Name="image" Source="{Binding}" />
-    </StackLayout>
+    <ScrollView>
+        <StackLayout VerticalOptions="Center" 
+                        Spacing="20"
+                        Padding="15,20,15,5">
+            <Label Text="Welcome to Tom's Camera Test!" VerticalOptions="Center" HorizontalOptions="Center" />
+            <Button Text="Take Photo" Clicked="TakePhoto" BackgroundColor="Silver" />
+            <Button Text="Pick Photo" Clicked="PickPhoto" BackgroundColor="Silver" />
+            <Image x:Name="image" Source="{Binding}" />
+        </StackLayout>
+    </ScrollView>
 </ContentPage>

@@ -29,6 +29,10 @@
 	-r \
 	/Users/tomeastman/Desktop/AI/Mobile/Xamarin/toms_camera_test/packages/Xam.Plugin.Media.3.0.1/lib/Xamarin.iOS10/Plugin.Media.dll \
 	-r \
+	/Users/tomeastman/Desktop/AI/Mobile/Xamarin/toms_camera_test/packages/Plugin.Permissions.2.0.1/lib/Xamarin.iOS10/Plugin.Permissions.Abstractions.dll \
+	-r \
+	/Users/tomeastman/Desktop/AI/Mobile/Xamarin/toms_camera_test/packages/Plugin.Permissions.2.0.1/lib/Xamarin.iOS10/Plugin.Permissions.dll \
+	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Core.dll \
 	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.dll \
@@ -319,6 +323,10 @@
 	-r \
 	/Users/tomeastman/Desktop/AI/Mobile/Xamarin/toms_camera_test/packages/Xam.Plugin.Media.3.0.1/lib/Xamarin.iOS10/Plugin.Media.dll \
 	-r \
+	/Users/tomeastman/Desktop/AI/Mobile/Xamarin/toms_camera_test/packages/Plugin.Permissions.2.0.1/lib/Xamarin.iOS10/Plugin.Permissions.Abstractions.dll \
+	-r \
+	/Users/tomeastman/Desktop/AI/Mobile/Xamarin/toms_camera_test/packages/Plugin.Permissions.2.0.1/lib/Xamarin.iOS10/Plugin.Permissions.dll \
+	-r \
 	/Users/tomeastman/Desktop/AI/Mobile/Xamarin/toms_camera_test/toms_camera_test/bin/Debug/toms_camera_test.dll \
 	-r \
 	/Users/tomeastman/Desktop/AI/Mobile/Xamarin/toms_camera_test/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/Xamarin.Forms.Core.dll \
@@ -328,10 +336,6 @@
 	/Users/tomeastman/Desktop/AI/Mobile/Xamarin/toms_camera_test/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll \
 	-r \
 	/Users/tomeastman/Desktop/AI/Mobile/Xamarin/toms_camera_test/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll \
-	-r \
-	/Users/tomeastman/Desktop/AI/Mobile/Xamarin/toms_camera_test/toms_camera_test/bin/Debug/Plugin.Permissions.Abstractions.dll \
-	-r \
-	/Users/tomeastman/Desktop/AI/Mobile/Xamarin/toms_camera_test/toms_camera_test/bin/Debug/Plugin.Permissions.dll \
 	-r \
 	/Users/tomeastman/Desktop/AI/Mobile/Xamarin/toms_camera_test/packages/Xamarin.Forms.2.3.4.247/lib/Xamarin.iOS10/ar/Xamarin.Forms.Platform.iOS.resources.dll \
 	-r \

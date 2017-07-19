@@ -1,0 +1,2 @@
+android.app.Application
+com.companyname.toms_camera_test

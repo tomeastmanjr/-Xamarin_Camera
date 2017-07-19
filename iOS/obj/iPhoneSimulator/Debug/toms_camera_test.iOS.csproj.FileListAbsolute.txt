@@ -24,7 +24,6 @@
 /Users/tomeastman/Desktop/AI/Mobile/Xamarin/toms_camera_test/iOS/bin/iPhoneSimulator/Debug/Plugin.Media.xml
 /Users/tomeastman/Desktop/AI/Mobile/Xamarin/toms_camera_test/iOS/bin/iPhoneSimulator/Debug/Plugin.Permissions.Abstractions.pdb
 /Users/tomeastman/Desktop/AI/Mobile/Xamarin/toms_camera_test/iOS/bin/iPhoneSimulator/Debug/Plugin.Permissions.Abstractions.xml
-/Users/tomeastman/Desktop/AI/Mobile/Xamarin/toms_camera_test/iOS/bin/iPhoneSimulator/Debug/Plugin.Permissions.pdb
 /Users/tomeastman/Desktop/AI/Mobile/Xamarin/toms_camera_test/iOS/bin/iPhoneSimulator/Debug/Plugin.Permissions.xml
 /Users/tomeastman/Desktop/AI/Mobile/Xamarin/toms_camera_test/iOS/bin/iPhoneSimulator/Debug/ar/Xamarin.Forms.Platform.iOS.resources.dll
 /Users/tomeastman/Desktop/AI/Mobile/Xamarin/toms_camera_test/iOS/bin/iPhoneSimulator/Debug/ca/Xamarin.Forms.Platform.iOS.resources.dll
